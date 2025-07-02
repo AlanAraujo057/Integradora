@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.calendario.Controllers.LoginController">
+    <Label text="UNIVERSIDAD TECNOLÓGICA" styleClass="title"/>
+    <Label text="EMILIANO ZAPATA DEL ESTADO DE MORELOS" styleClass="subtitle"/>
+
+    <TextField fx:id="usuarioField" promptText="Matrícula"/>
+    <PasswordField fx:id="contrasenaField" promptText="Contraseña"/>
+
+    <HBox>
+        <Button text="Registrarse" onAction="#handleRegistro"/>
+        <Button text="¿Olvidaste tu contraseña?"/>
+    </HBox>
+
+    <Button text="Entrar" onAction="#handleLogin" styleClass="primary-button"/>
+</VBox>
